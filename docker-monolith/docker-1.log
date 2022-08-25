@@ -1,0 +1,9 @@
+sudo docker images
+REPOSITORY                 TAG       IMAGE ID       CREATED          SIZE
+g-turkin/ubuntu-tmp-file   latest    75c462a2cdf9   14 seconds ago   63.1MB
+nginx                      latest    b692a91e4e15   2 weeks ago      142MB
+ubuntu                     18.04     8d5df41c547b   2 weeks ago      63.1MB
+hello-world                latest    feb5d9fea6a5   10 months ago    13.3kB
+
+Задание со *
+Образ это как скилет, он неизменяется, а контейнер может быть изменен и из него можно создать образ.
