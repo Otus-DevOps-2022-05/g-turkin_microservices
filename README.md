@@ -1,6 +1,30 @@
 # g-turkin_microservices
 g-turkin microservices repository
 
+# Выполнено ДЗ № 14 Разбиение приложения на несколько микросервисов. Выбор базового образа. Подключение volume к контейнеру.
+
+ - [X] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ - собран Docker-образы для сервисного приложения
+ - оптимизирован Docker-образ
+
+## Как запустить проект:
+ - docker kill $(docker ps -q)
+ - docker run -d --network=reddit --network-alias=post_db --network-alias=comment_db -v reddit_db:/data/db mongo:latest
+ - docker run -d --network=reddit --network-alias=post turkin/post:1.0
+ - docker run -d --network=reddit --network-alias=comment turkin/comment:1.0
+ - docker run -d --network=reddit -p 9292:9292 turkin/ui:2.0
+
+## Как проверить работоспособность:
+ - Перейти по ссылке http://localhost:929
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+
 # Выполнено ДЗ № 13 Запуск VM с установленным Docker Engine при помощи Docker Machine. Написание Dockerfile и сборка образа с тестовым приложением. Сохранение образа на DockerHub.
 
  - [X] Основное ДЗ
