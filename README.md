@@ -1,7 +1,7 @@
 # g-turkin_microservices
 g-turkin microservices repository
 
-# Выполнено ДЗ №
+# Выполнено ДЗ № 15 Практика работы с основными типами Docker сетей. Декларативное описание Docker инфраструктуры при помощи Docker Compose.
 
  - [X] Основное ДЗ
  - [ ] Задание со *
@@ -9,7 +9,7 @@ g-turkin microservices repository
 ## В процессе сделано:
  - сеть Docker none, host && bridge
  - docker-compose и параметры через .env
- - базовое имя проекта образуется из названия папки где запускается docker-compose, поменять моно добавив container_name в docker-compose.yml к каждому сервису
+ - базовое имя проекта образуется из названия папки где запускается docker-compose, поменять моно добавив COMPOSE_PROJECT_NAME в переменную .env
 
 ## Как запустить проект:
  - запустить команду "docker-compose ps" в директории src
