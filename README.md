@@ -1,6 +1,31 @@
 # g-turkin_microservices
 g-turkin microservices repository
 
+# Выполнено ДЗ № 17 Создание и запуск системы мониторинга Prometheus.
+
+ - [X] Основное ДЗ
+ - [ ] Задание со *
+
+## В процессе сделано:
+ - запуск Prometheus
+ - Мониторинг состояния микросервисов
+ - Сбор метрик хоста с использованием экспортера
+ - docker pull turkin/ui
+ - docker pull turkin/comment
+ - docker pull turkin/post
+ - docker pull turkin/prometheus
+
+## Как запустить проект:
+ - запустить команду "docker-compose up -d" в директории docker
+
+## Как проверить работоспособность:
+ - Перейти по ссылке http://localhost:9090
+
+## PR checklist
+ - [X] Выставил label с номером домашнего задания
+ - [X] Выставил label с темой домашнего задания
+
+
 # Выполнено ДЗ № 16 Gitlab CI. Построение процесса непрерывной интеграции
 
  - [X] Основное ДЗ
